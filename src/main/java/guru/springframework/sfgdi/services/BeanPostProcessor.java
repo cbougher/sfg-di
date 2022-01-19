@@ -1,7 +1,12 @@
 package guru.springframework.sfgdi.services;
 
+import org.hibernate.service.spi.Configurable;
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.RequestScope;
 
 @Component
 public class BeanPostProcessor implements org.springframework.beans.factory.config.BeanPostProcessor {
